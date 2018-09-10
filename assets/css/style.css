@@ -873,7 +873,7 @@ footer {
   {
       max-width: 100%;
   }
-  .modal-dialog
+  #lightbox .modal-dialog
   {
     max-width: 920px;
     width: auto !important;
