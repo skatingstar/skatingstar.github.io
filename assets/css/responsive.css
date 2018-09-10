@@ -1,0 +1,185 @@
+@media (max-width: 991px) {
+    /*Header*/
+    .modal-button > a {
+        width: 100%;
+    }
+
+    /*Training sessions*/
+    .tr-session-item {
+        padding: 0;
+        border-right: none;
+        max-width: 360px;
+    margin: auto;
+    margin-bottom: 20px;
+    }
+
+    .tr-session-item.odd {
+        padding: 0;
+        border-left: none;
+        left: 0;
+    }
+
+    .tr-session-item > p {
+        position: static;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .tr-session-item.odd > p {
+        text-align: center;
+    }
+
+    /*Shedule and prices*/
+    .shedule-item:nth-child(even) {
+        border-right: none;
+    }
+
+    .subscriptions-item {
+        width: 50%;
+    }
+
+    .subscriptions-item:last-child {
+        margin-left: 25%;
+    }
+
+    .subscriptions-item:nth-child(even) .subs-border {
+        border-right: none;
+    }
+
+    .individual-item:nth-child(even) .subs-border {
+        border-right: none;
+    }
+
+    /*Why choose us*/
+    .why-we-item {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    /*header*/
+    header {
+        height: 500px;
+    }
+
+    .navbar {
+        background-color: #d40123;
+        left: 0;
+        right: auto;
+        width: 100%;
+        z-index: 1000;
+        border: none;
+    }
+
+    .navbar-nav {
+        margin: 0;
+    }
+
+    .container-fluid > .navbar-collapse, .container-fluid > .navbar-header, .container > .navbar-collapse, .container > .navbar-header {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .navbar-toggle {
+        float: left;
+        border: none;
+        border-radius: 0;
+    }
+
+    .navbar-toggle .icon-bar {
+        background-color: white;
+    }
+
+    .nav.navbar-nav > li > a, .nav > li > a:focus {
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .nav.navbar-nav > li > a:hover {
+        border-bottom: none;
+        transition: 0.2s all ease-in-out;
+        text-decoration: underline;
+    }
+
+    .phone-number {
+        top: 0;
+        z-index: 1001;
+    }
+
+    .phone-number > a {
+        color: white;
+        font-size: 22px;
+        line-height: 50px;
+        padding-right: 20px;
+        border-bottom: none;
+    }
+
+    .phone-number > a:hover {
+        border-bottom: none;
+    }
+
+    .logo {
+        right: 5%;
+        width: 90%;
+        top: 18%;
+    }
+
+    .modal-button {
+        right: 5%;
+        width: 90%;
+        top: 42%;
+    }
+
+    .modal-button > p {
+        color: white;
+    }
+
+    /*Training sessions*/
+    .training-sessions {
+        margin-bottom: 100px;
+    }
+
+    /*Shedule and prices*/
+    .shedule-item {
+        margin: 20px 0;
+        border-right: none;
+    }
+
+    .shedule-item:last-child {
+        margin-bottom: 50px;
+    }
+
+    .subscriptions-item {
+        margin: 20px 0;
+    }
+
+    .subscriptions-item:last-child {
+        margin-bottom: 50px;
+    }
+
+    .subscriptions-item {
+        margin: 20px 0;
+    }
+
+    .individual-item {
+        margin: 0px 0;
+    }
+
+    /*Footer*/
+    .marker-description {
+        width: 95%;
+        left: 0;
+        top: 46%;
+        margin-left: 2.5%;
+    }
+
+    .marker-description > img {
+        display: none;
+    }
+
+    /*Modal*/
+    .form-pad {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}

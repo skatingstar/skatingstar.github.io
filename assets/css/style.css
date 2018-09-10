@@ -1,0 +1,887 @@
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Body
+	2. Header / #header
+		2.1. Navigation / .navbar
+	3. About GYM / .about-gym
+	4. Training sessions / .training-sessions
+	5. Shedule and prices / .shedule-prices
+	6. Why choose us / .why-we
+	7. Footer / #footer
+	8. Modal / #modal
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[Color codes]
+
+White (background): #FFFFFF;
+Dark Red (links, highlights, tops): #d40123;
+Grey (text): color: #565660;
+Dark Blue (headings): color: #00002e;
+-------------------------------------------------------------------*/
+
+/*Fonts*/
+@font-face {
+    font-family: 'Oswald-Medium';
+    src: url('../fonts/Oswald-Medium.eot');
+    src: url('../fonts/Oswald-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Oswald-Medium.woff') format('woff'),
+    url('../fonts/Oswald-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald-Light';
+    src: url('../fonts/Oswald-Light.eot');
+    src: url('../fonts/Oswald-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Oswald-Light.woff') format('woff'),
+    url('../fonts/Oswald-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald-Bold';
+    src: url('../fonts/Oswald-Bold.eot');
+    src: url('../fonts/Oswald-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Oswald-Bold.woff') format('woff'),
+    url('../fonts/Oswald-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald-Heavy';
+    src: url('../fonts/Oswald-Heavy.eot');
+    src: url('../fonts/Oswald-Heavy.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Oswald-Heavy.woff') format('woff'),
+    url('../fonts/Oswald-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+/*------------------------------------------------------------------
+[1. Body]
+------------------------------------------------------------------*/
+body {
+    background-color: white;
+}
+
+/*------------------------------------------------------------------
+[2. Header / #header]
+------------------------------------------------------------------*/
+header {
+    background: #000115 url("../img/header.png") no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    height: 725px;
+    position: relative;
+}
+
+.header-overflow{
+    position: absolute;
+    background: #000115d4;
+    width: 100%;
+    height: 100%;
+}
+
+header .container {
+    position: relative;
+    height: 725px;
+}
+
+/*------------------------------------------------------------------
+[2.1. Navigation / .navbar]
+------------------------------------------------------------------*/
+.navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.navbar .container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-collapse {
+    padding: 0;
+}
+
+.nav.navbar-nav > li > a, .nav > li > a:focus {
+    font-family: "Oswald-Light", sans-serif;
+    font-size: 1.3em;
+    color: white;
+    padding: 19px;
+    background-color: transparent;
+}
+
+.nav.navbar-nav > li > a:hover {
+    background-color: #d40123;
+    border-bottom: 2px solid white;
+    transition: 0.2s all ease-in-out;
+    -webkit-transition: 0.2s all ease-in-out;
+    -moz-transition: 0.2s all ease-in-out;
+    -o-transition: 0.2s all ease-in-out;
+}
+
+/*Phone number*/
+.phone-number {
+    position: absolute;
+    right: 0;
+    top: 15%;
+}
+
+.phone-number > a {
+    font-family: "Oswald-Heavy", sans-serif;
+    font-size: 2.87em;
+    color: #d40123;
+    border-bottom: dashed white 3px;
+    text-decoration: none;
+    transition: 0.2s all ease-in-out;
+    -webkit-transition: 0.2s all ease-in-out;
+    -moz-transition: 0.2s all ease-in-out;
+    -o-transition: 0.2s all ease-in-out;
+}
+
+.phone-number > a:hover {
+    color: white;
+    border-bottom: dashed #d40123 3px;
+    transition: 0.2s all ease-in-out;
+    -webkit-transition: 0.2s all ease-in-out;
+    -moz-transition: 0.2s all ease-in-out;
+    -o-transition: 0.2s all ease-in-out;
+}
+
+/*Logo*/
+.logo {
+    position: absolute;
+    right: 0;
+    top: 35%;
+    width: 46%;
+}
+
+.logo img {
+    width: 100%;
+}
+
+/*Modal button*/
+.modal-button {
+    position: absolute;
+    right: 0;
+    top: 69%;
+    width: 46%;
+}
+
+.modal-button > a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    background-color: #d40123;
+    width: 67%;
+    text-align: center;
+    margin: 0 auto;
+    font-family: "Oswald-Medium", sans-serif;
+    font-size: 2.1em;
+    padding: 12px 0;
+    transition: 0.2s all ease-in-out;
+    -webkit-transition: 0.2s all ease-in-out;
+    -moz-transition: 0.2s all ease-in-out;
+    -o-transition: 0.2s all ease-in-out;
+}
+
+.modal-button > a:hover {
+    color: #d40123;
+    border: 1px solid #d40123;
+    background-color: white;
+    transition: 0.2s all ease-in-out;
+    -webkit-transition: 0.2s all ease-in-out;
+    -moz-transition: 0.2s all ease-in-out;
+    -o-transition: 0.2s all ease-in-out;
+}
+
+.modal-button > p {
+    color: #565660;
+    text-align: center;
+    font-family: "Oswald-Light", sans-serif;
+    font-size: 1.5em;
+    margin-top: 12px;
+}
+
+/*------------------------------------------------------------------
+[3. About GYM / .about-gym]
+------------------------------------------------------------------*/
+/*Header about gym*/
+.about-gym {
+    background: url("../img/about-gym-bg.jpg") 100% 100% no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-bottom: 125px;
+}
+
+.header-about-gym {
+    background: url("../img/header-about-gym.png") 100% 100% no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 173px;
+}
+
+.header-about-gym > h1 {
+    margin: 0;
+    text-align: center;
+    font-family: "Oswald-Light", sans-serif;
+    font-size: 2.8em;
+    color: white;
+    padding-top: 23px;
+}
+
+/*About gym text*/
+.about-gym-text {
+    margin-bottom: 64px;
+}
+
+.about-gym-text > p {
+    font-family: "Oswald-Light", sans-serif;
+    font-size: 1.7em;
+    color: white;
+    text-align: center;
+    padding: 11px 0;
+}
+
+/*About gym icons*/
+.about-icons {
+    text-align: center;
+}
+
+.about-icons > img {
+    width: 60%;
+    max-width: 80px;
+}
+
+.about-icons > .count {
+    font-family: "Oswald-Bold", sans-serif;
+    font-size: 2.2em;
+    margin-top: 23px;
+    color: #d40123;
+    margin-bottom: 0;
+}
+
+.about-icons > .icon-description {
+    font-family: "Oswald-Light", sans-serif;
+    font-size: 1.26em;
+    color: white;
+    line-height: 1.57em;
+    letter-spacing: 1px;
+}
+
+/*------------------------------------------------------------------
+[4. Training sessions / .training-sessions]
+------------------------------------------------------------------*/
+.training-sessions {
+    margin-bottom: 195px;
+}
+
+/*Header training sessions*/
+.header-training-sessions > h2 {
+    text-align: center;
+    font-family: "Oswald-Light", sans-serif;
+    font-size: 2.8em;
+    color: #00002e;
+    margin: 0 0 80px 0;
+    padding-top: 40px;
+}
+
+/*Training sessions content*/
+.tr-session-item {
+    padding: 0 8px 0 97px;
+    position: relative;
+    border-right: 5px solid #d40123;
+}
+
+.tr-session-item.odd {
+    padding: 0 97px 0 8px;
+    border-left: 5px solid #d40123;
+    border-right: none;
+    left: -5px;
+}
+
+.tr-session-item > p {
+    font-family: "Oswald-Light", sans-serif;
+    position: absolute;
+    bottom: -108px;
+    left: 97px;
+    right: 8px;
+    color: #000024;
+    font-size: 1.5em;
+    line-height: 1.2em;
+    letter-spacing: 0.17px;
+    text-align: left;
+}
+
+.tr-session-item.odd > p {
+    right: 97px;
+    left: 8px;
+    text-align: right;
+}
+
+.tr-session-img {
+    position: relative;
+}
+
+.tr-session-img img {
+    width: 100%;
+}
+
+.tr-session-img:hover .training-hover {
+    opacity: 1;
+    transition: 0.2s all ease-in-out;
+    -webkit-transition: 0.2s all ease-in-out;
+    -moz-transition: 0.2s all ease-in-out;
+    -o-transition: 0.2s all ease-in-out;
+}
+
+.tr-session-img img.training-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.2s all ease-in-out;
+    -webkit-transition: 0.2s all ease-in-out;
+    -moz-transition: 0.2s all ease-in-out;
+    -o-transition: 0.2s all ease-in-out;
+}
+
+.tr-session-img p {
+    font-family: "Oswald-Bold", sans-serif;
+    font-size: 1.8em;
+    color: white;
+    position: absolute;
+    bottom: 4px;
+    left: 21px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/*------------------------------------------------------------------
+[5. Shedule and prices / .shedule-prices]
+------------------------------------------------------------------*/
+.shedule-prices {
+    background: url("../img/shedule-prices-bg.jpg") 100% 100% no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*Header shedule and prices*/
+.header-shedule-prices {
+    background: url("../img/header-shedule-prices.png") 100% 100% no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 173px;
+}
+
+.header-shedule-prices > h2 {
+    margin: 0;
+    text-align: center;
+    font-family: "Oswald-Light", sans-serif;
+    font-size: 2.8em;
+    color: white;
+    padding-top: 23px;
+}
+
+/*Shedule and prices content*/
+.shedule-prices .container h3 {
+    text-align: center;
+    color: white;
+    font-family: "Oswald-Bold", sans-serif;
+    font-size: 2.1em;
+    text-transform: uppercase;
+    margin-top: -10px;
+    letter-spacing: 2px;
+}
+
+/*Shedule*/
+.shedule-item {
+    margin: 50px 0 77px 0;
+    border-right: 1px solid white;
+    text-align: center;
+}
+
+.shedule-item:last-child {
+    border-right: none;
+}
+
+.shedule-item > .day {
+    text-transform: uppercase;
+    color: #d40123;
+    font-family: "Oswald-Light", sans-serif;
+    font-size: 1.5em;
+}
+
+.shedule-item > .time {
+    color: white;
+    font-family: "Oswald-Light", sans-serif;
+    font-size: 1.4em;
+    line-height: 0.6em;
+}
+
+/*Subscriptions*/
+.subscriptions-item {
+    width: 20%;
+    float: left;
+    text-align: center;
+    margin: 44px 0 70px 0;
+}
+
+.subscriptions-item .subs-name {
+    font-family: "Oswald-Bold", sans-serif;
+    font-size: 2.1em;
+    text-transform: uppercase;
+    color: #d40123;
+}
+
+.subscriptions-item .subs-description {
+    color: white;
+    font-family: "Oswald-Light", sans-serif;
+    font-size: 1.4em;
+    line-height: 1.2em;
+}
+
+.subscriptions-item .subs-border {
+    border-right: 1px solid white;
+}
+
+.subscriptions-item:last-child .subs-border {
+    border-right: none;
+}
+
+.subscriptions-item .subs-price {
+    margin-top: 43px;
+}
+
+.subscriptions-item .subs-price > span {
+    font-family: "Oswald-Bold", sans-serif;
+    font-size: 2.1em;
+    color: #d40123;
+    background-color: white;
+    border: 3px solid #d40123;
+    border-radius: 50%;
+    padding: 15px 0;
+    display: block;
+    width: 80px;
+    margin: 0 auto;
+}
+
+/*Individual trainings*/
+.individual-item {
+    padding: 5px;
+    text-align: center;
+    margin: 0px 0 50px 0;
+}
+
+.individual-item .subs-name {
+    font-family: "Oswald-Bold", sans-serif;
+    font-size: 2.1em;
+    text-transform: uppercase;
+    color: #d40123;
+}
+
+.individual-item .subs-description {
+    color: white;
+    font-family: "Oswald-Light", sans-serif;
+    font-size: 1.4em;
+    line-height: 1.2em;
+}
+
+.individual-item .subs-border {
+    border-right: 1px solid white;
+}
+
+.individual-item:last-child .subs-border {
+    border-right: none;
+}
+
+.individual-item .subs-price {
+    margin-top: 25px;
+}
+
+.individual-item .subs-price > span {
+    font-family: "Oswald-Bold", sans-serif;
+    font-size: 2.1em;
+    color: #d40123;
+    background-color: white;
+    border: 3px solid #d40123;
+    border-radius: 50%;
+    padding: 15px 0;
+    display: block;
+    width: 80px;
+    margin: 0 auto;
+}
+
+/*------------------------------------------------------------------
+[6. Why choose us / .why-we]
+------------------------------------------------------------------*/
+.why-we {
+    margin-bottom: 52px;
+}
+
+/*Header Why we*/
+.header-why-we > h2 {
+    text-align: center;
+    font-family: "Oswald-Light", sans-serif;
+    font-size: 2.8em;
+    color: #00002e;
+    padding: 53px 0 63px 0;
+    margin: 0;
+}
+
+/*Why we content*/
+.why-we-item > img {
+    width: 100%;
+}
+
+.why-we-item > .why-we-name {
+    font-family: "Oswald-Bold", sans-serif;
+    font-size: 2.3em;
+    color: #d40123;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 17px 0 5px 0;
+}
+
+.why-we-item > .why-we-description {
+    font-family: "Oswald-Light", sans-serif;
+    font-size: 1.2em;
+    color: #00002e;
+    text-align: center;
+}
+
+/*Button for modal*/
+.why-we-button {
+    margin-top: 84px;
+}
+
+.why-we-button > a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    background-color: #d40123;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    font-family: "Oswald-Medium", sans-serif;
+    font-size: 2.1em;
+    padding: 10px 0;
+    transition: 0.2s all ease-in-out;
+    -webkit-transition: 0.2s all ease-in-out;
+    -moz-transition: 0.2s all ease-in-out;
+    -o-transition: 0.2s all ease-in-out;
+}
+
+.why-we-button > a:hover {
+    color: #d40123;
+    border: 1px solid #d40123;
+    background-color: white;
+    transition: 0.2s all ease-in-out;
+    -webkit-transition: 0.2s all ease-in-out;
+    -moz-transition: 0.2s all ease-in-out;
+    -o-transition: 0.2s all ease-in-out;
+}
+
+.why-we-button > p {
+    color: #565660;
+    text-align: center;
+    font-family: "Oswald-Light", sans-serif;
+    font-size: 1.3em;
+    margin-top: 7px;
+}
+
+/*------------------------------------------------------------------
+[7. Footer / #footer]
+------------------------------------------------------------------*/
+footer {
+    height: 700px;
+    position: relative;
+}
+
+/*Map*/
+#map {
+    height: 100%;
+}
+
+.marker-description {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 380px;
+    height: 225px;
+    z-index: 2;
+    margin-top: -265px;
+    margin-left: 30px;
+    background-color: white;
+    -webkit-box-shadow: 8px 8px 5px 0 rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 8px 8px 5px 0 rgba(0, 0, 0, 0.75);
+    box-shadow: 8px 8px 5px 0 rgba(0, 0, 0, 0.75);
+}
+
+.marker-description .address {
+    padding: 20px 42px;
+    font-family: "Oswald-Light", sans-serif;
+    font-size: 1.7em;
+    margin-bottom: 0;
+}
+
+.marker-description .phone {
+    font-family: "Oswald-Bold", sans-serif;
+    font-size: 24px;
+    color: #d40123;
+    padding-left: 41px;
+    position: relative;
+    top: -10px;
+}
+
+.marker-description > img {
+    position: absolute;
+    bottom: -17px;
+    left: -11px;
+    z-index: -1;
+}
+
+/*Footer bottom*/
+.footer-bottom {
+    width: 100%;
+    background: url("../img/footer-bottom.png") 100% 100% no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 180px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+}
+
+.footer-nav {
+    list-style-type: none;
+    position: absolute;
+    right: 0;
+    top: 120px;
+}
+
+.footer-nav > li {
+    float: left;
+}
+
+.footer-nav > li > a {
+    font-family: "Oswald-Light", sans-serif;
+    font-size: 1.2em;
+    color: white;
+    padding: 19px;
+    text-decoration: none;
+    transition: 0.2s all ease-in-out;
+    -webkit-transition: 0.2s all ease-in-out;
+    -moz-transition: 0.2s all ease-in-out;
+    -o-transition: 0.2s all ease-in-out;
+}
+
+.footer-nav > li > a:hover {
+    border-bottom: 2px solid white;
+    transition: 0.2s all ease-in-out;
+    -webkit-transition: 0.2s all ease-in-out;
+    -moz-transition: 0.2s all ease-in-out;
+    -o-transition: 0.2s all ease-in-out;
+}
+
+/*Socials*/
+.socials {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    top: 70px;
+}
+
+.header-socials > p {
+    font-family: "Oswald-Light", sans-serif;
+    font-size: 1.5em;
+    color: white;
+}
+
+.socials-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.socials-list > li {
+    display: inline-block;
+}
+
+.socials-list > li > a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    font-size: 1.5em;
+    border-radius: 50%;
+    margin-right: 8px;
+    background-color: #000022;
+    width: 40px;
+    height: 40px;
+    display: block;
+    transition: 0.2s all ease-in-out;
+    -webkit-transition: 0.2s all ease-in-out;
+    -moz-transition: 0.2s all ease-in-out;
+    -o-transition: 0.2s all ease-in-out;
+}
+
+.socials-list > li:last-child > a {
+    margin-right: 0;
+}
+
+.socials-list > li > a:hover {
+    background-color: white;
+    color: #000022;
+    transition: 0.2s all ease-in-out;
+    -webkit-transition: 0.2s all ease-in-out;
+    -moz-transition: 0.2s all ease-in-out;
+    -o-transition: 0.2s all ease-in-out;
+}
+
+/*------------------------------------------------------------------
+[8. Modal / #modal]
+------------------------------------------------------------------*/
+.modal-content {
+    border-radius: 0;
+}
+
+.modal-header {
+    border-bottom: none;
+    padding-bottom: 26px;
+}
+
+.modal-title {
+    font-family: "Oswald-Bold", sans-serif;
+    font-size: 2.6em;
+    color: #d40123;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.modal-header .close {
+    font-size: 2em;
+    position: absolute;
+    right: 12px;
+    top: 8px;
+}
+
+/*form*/
+.form-pad {
+    margin: 0 80px 20px 80px;
+}
+
+.form-pad.button {
+    margin-top: 50px;
+    margin-bottom: 26px;
+}
+
+.form-pad input, .form-pad button {
+    width: 100%;
+    transition: 0.2s all ease-in-out;
+}
+
+.form-pad input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #00001f;
+    outline: none;
+    padding: 5px 0 7px 0;
+    font-family: "Oswald-Light", sans-serif;
+    font-size: 1.3em;
+}
+
+.form-pad button {
+    color: white;
+    background-color: #d40123;
+    text-align: center;
+    font-family: "Oswald-Medium", sans-serif;
+    font-size: 2.1em;
+    border: 1px solid white;
+    margin: -1px;
+    padding: 16px 0;
+    transition: 0.2s all ease-in-out;
+}
+
+.form-pad button:hover {
+    color: #d40123;
+    background-color: white;
+    transition: 0.2s all ease-in-out;
+    border: 1px solid #d40123;
+}
+
+.thankyou_message h4 {
+    color: #098a71;
+    margin: 0 80px 20px 80px;
+    font-size: 16px;
+    letter-spacing: .02em;
+    font-weight: 600;
+    padding: 10px 15px;
+    background: #dcfbde;
+    display: inline-block;
+    width: 72%;
+    border-radius: 4px;
+}
+
+#contact-form input.error {
+    color: red;
+}
+#contact-form label.error {
+    display: none !important;
+}
+#contact-form input:focus {
+    outline: 0;
+    color: #0ca98b;
+}
+#contact-form #submit:disabled {
+    cursor: not-allowed;
+}
+
+.modal.and.carousel {
+    position: fixed; 
+  }
+
+  .gallery a
+  {
+      display: inline-block;
+      width: 100%;
+      padding-bottom: 10px;
+  }
+  .gallery a img
+  {
+      max-width: 100%;
+  }
+  .modal-dialog
+  {
+    max-width: 920px;
+    width: auto !important;
+  }
+  .carousel-inner .item img
+  {
+    margin: auto;
+  }
+  .glyphicon-chevron-right:before, .glyphicon-chevron-left:before{
+      display: none;
+  }
